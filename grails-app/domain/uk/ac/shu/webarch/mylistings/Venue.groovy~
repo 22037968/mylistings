@@ -7,8 +7,13 @@ class Venue {
     String venuePostCode
     String venueWebsite
     String venueTelephone
-    String venueWebsite
 
     static constraints = {
     }
+	static hasMany = [classes: Event]
+	static mappedBy = [classes; 'Venue']
+
+	static mapping = {
+	table 'Venue'
+	}
 }

@@ -10,4 +10,10 @@ class Venue {
 
     static constraints = {
     }
+	static hasMany = [classes: Event]
+	static mappedBy = [classes; 'Venue']
+
+	static mapping = {
+	table 'Venue'
+	}
 }

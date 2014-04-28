@@ -9,4 +9,11 @@ class Promoter {
 
     static constraints = {
     }
+
+	static hasMany = [classes: Event]
+	static mappedBy = [classes; 'Promoter']
+
+	static mapping = {
+	table 'Promoter'
+	}
 }
