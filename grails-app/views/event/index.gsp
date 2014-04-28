@@ -32,6 +32,8 @@
 					
 						<g:sortableColumn property="price" title="${message(code: 'event.price.label', default: 'Price')}" />
 					
+						<th><g:message code="event.promoter.label" default="Promoter" /></th>
+					
 						<g:sortableColumn property="startTime" title="${message(code: 'event.startTime.label', default: 'Start Time')}" />
 					
 					</tr>
@@ -47,6 +49,8 @@
 						<td>${fieldValue(bean: eventInstance, field: "eventName")}</td>
 					
 						<td>${fieldValue(bean: eventInstance, field: "price")}</td>
+					
+						<td>${fieldValue(bean: eventInstance, field: "promoter")}</td>
 					
 						<td>${fieldValue(bean: eventInstance, field: "startTime")}</td>
 					

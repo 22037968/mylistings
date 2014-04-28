@@ -59,11 +59,29 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${eventInstance?.promoter}">
+				<li class="fieldcontain">
+					<span id="promoter-label" class="property-label"><g:message code="event.promoter.label" default="Promoter" /></span>
+					
+						<span class="property-value" aria-labelledby="promoter-label"><g:link controller="promoter" action="show" id="${eventInstance?.promoter?.id}">${eventInstance?.promoter?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${eventInstance?.startTime}">
 				<li class="fieldcontain">
 					<span id="startTime-label" class="property-label"><g:message code="event.startTime.label" default="Start Time" /></span>
 					
 						<span class="property-value" aria-labelledby="startTime-label"><g:fieldValue bean="${eventInstance}" field="startTime"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventInstance?.venue}">
+				<li class="fieldcontain">
+					<span id="venue-label" class="property-label"><g:message code="event.venue.label" default="Venue" /></span>
+					
+						<span class="property-value" aria-labelledby="venue-label"><g:link controller="venue" action="show" id="${eventInstance?.venue?.id}">${eventInstance?.venue?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

@@ -10,10 +10,8 @@ class Promoter {
     static constraints = {
     }
 
-	static hasMany = [classes: Event]
-	static mappedBy = [classes; 'Promoter']
+	static hasMany = [events: Event]
+	static mappedBy = [events: 'promoter']
 
-	static mapping = {
-	table 'Promoter'
-	}
+
 }

@@ -10,10 +10,8 @@ class Venue {
 
     static constraints = {
     }
-	static hasMany = [classes: Event]
-	static mappedBy = [classes; 'Venue']
+	static hasMany = [events: Event]
+	static mappedBy = [classes: 'venue']
 
-	static mapping = {
-	table 'Venue'
-	}
+
 }

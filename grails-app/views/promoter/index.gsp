@@ -28,9 +28,9 @@
 					
 						<g:sortableColumn property="promoterTelephone" title="${message(code: 'promoter.promoterTelephone.label', default: 'Promoter Telephone')}" />
 					
-						<g:sortableColumn property="promterEmail" title="${message(code: 'promoter.promterEmail.label', default: 'Promter Email')}" />
+						<g:sortableColumn property="promoterWebsite" title="${message(code: 'promoter.promoterWebsite.label', default: 'Promoter Website')}" />
 					
-						<g:sortableColumn property="website" title="${message(code: 'promoter.website.label', default: 'Website')}" />
+						<g:sortableColumn property="promterEmail" title="${message(code: 'promoter.promterEmail.label', default: 'Promter Email')}" />
 					
 					</tr>
 				</thead>
@@ -42,9 +42,9 @@
 					
 						<td>${fieldValue(bean: promoterInstance, field: "promoterTelephone")}</td>
 					
-						<td>${fieldValue(bean: promoterInstance, field: "promterEmail")}</td>
+						<td>${fieldValue(bean: promoterInstance, field: "promoterWebsite")}</td>
 					
-						<td>${fieldValue(bean: promoterInstance, field: "website")}</td>
+						<td>${fieldValue(bean: promoterInstance, field: "promterEmail")}</td>
 					
 					</tr>
 				</g:each>

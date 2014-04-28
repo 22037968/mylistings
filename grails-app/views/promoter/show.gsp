@@ -23,6 +23,17 @@
 			</g:if>
 			<ol class="property-list promoter">
 			
+				<g:if test="${promoterInstance?.events}">
+				<li class="fieldcontain">
+					<span id="events-label" class="property-label"><g:message code="promoter.events.label" default="Events" /></span>
+					
+						<g:each in="${promoterInstance.events}" var="e">
+						<span class="property-value" aria-labelledby="events-label"><g:link controller="event" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${promoterInstance?.promoterName}">
 				<li class="fieldcontain">
 					<span id="promoterName-label" class="property-label"><g:message code="promoter.promoterName.label" default="Promoter Name" /></span>
@@ -41,20 +52,20 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${promoterInstance?.promoterWebsite}">
+				<li class="fieldcontain">
+					<span id="promoterWebsite-label" class="property-label"><g:message code="promoter.promoterWebsite.label" default="Promoter Website" /></span>
+					
+						<span class="property-value" aria-labelledby="promoterWebsite-label"><g:fieldValue bean="${promoterInstance}" field="promoterWebsite"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${promoterInstance?.promterEmail}">
 				<li class="fieldcontain">
 					<span id="promterEmail-label" class="property-label"><g:message code="promoter.promterEmail.label" default="Promter Email" /></span>
 					
 						<span class="property-value" aria-labelledby="promterEmail-label"><g:fieldValue bean="${promoterInstance}" field="promterEmail"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${promoterInstance?.website}">
-				<li class="fieldcontain">
-					<span id="website-label" class="property-label"><g:message code="promoter.website.label" default="Website" /></span>
-					
-						<span class="property-value" aria-labelledby="website-label"><g:fieldValue bean="${promoterInstance}" field="website"/></span>
 					
 				</li>
 				</g:if>

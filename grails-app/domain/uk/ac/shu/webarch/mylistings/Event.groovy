@@ -8,15 +8,11 @@ class Event {
 	String startTime
 	String endTime
 
-	Venue classVenue
-	Promoter classPromoter
+	Venue venue
+	Promoter promoter
 
     static constraints = {
     }
  
-	static mapping = {
-		table 'event'
-		classVenue column: 'venue_fk'
-		classPromoter column: 'promoter_fk'
-		}
+
 }

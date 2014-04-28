@@ -2,6 +2,23 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: venueInstance, field: 'events', 'error')} ">
+	<label for="events">
+		<g:message code="venue.events.label" default="Events" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${venueInstance?.events?}" var="e">
+    <li><g:link controller="event" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="event" action="create" params="['venue.id': venueInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'event.label', default: 'Event')])}</g:link>
+</li>
+</ul>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: venueInstance, field: 'venueAddress', 'error')} ">
 	<label for="venueAddress">
 		<g:message code="venue.venueAddress.label" default="Venue Address" />

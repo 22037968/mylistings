@@ -9,4 +9,9 @@ class Promoter {
 
     static constraints = {
     }
+
+	static hasMany = [events: Event]
+	static mappedBy = [classes: 'promoter']
+
+
 }
