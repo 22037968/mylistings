@@ -93,7 +93,7 @@
 				<h2>Please select a link below to see either events, promoters or a venue:</h2>
 				<ul>
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
+						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.name}</g:link></li>
 					</g:each>
 				</ul>
 			</div>
