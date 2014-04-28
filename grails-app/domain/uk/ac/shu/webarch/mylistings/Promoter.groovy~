@@ -11,7 +11,7 @@ class Promoter {
     }
 
 	static hasMany = [events: Event]
-	static mappedBy = [classes: 'promoter']
+	static mappedBy = [events: 'promoter']
 
 
 }
