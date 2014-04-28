@@ -1,17 +1,10 @@
-mylistings
-==========
+mylistings Web Application
+==========================
 
-Web Arch Assignment 2
+This web-application is intended to provide a database of events, promoters and venues that users can search.
 
-CREATING THE DATABASE
+Our aim was to create a central place that information is available for people to access and share.
 
+Users can easily access the information, which is stored on 3 tables, which are linked.
 
-Once the project has been cloned you will need to login to MySQL and create the database.
-
-After logging in, please run these three commands:
-
-create database mylistings default charset utf8 default collate utf8_bin;
-
-grant all on mylistings.* to 'webarch'@'localhost' identified by 'webarch'
-
-grant all on mylistings.* to 'webarch'@'localhost.localdomain' identified by 'webarch';
+While the application currently has limited functionaility, the idea is to expand on the options available which helps spread the information. An example of this will be notifications of when a favorited promoter lists an event, through an RSS feed.
