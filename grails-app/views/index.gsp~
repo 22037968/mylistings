@@ -5,7 +5,7 @@
 		<title>Welcome to "My Listings Application"</title>
 		<style type="text/css" media="screen">
 			#status {
-				background-color: #eee;
+				background-color: #0099CC;
 				border: .2em solid #fff;
 				margin: 2em 2em 1em;
 				padding: 1em;
@@ -98,8 +98,8 @@
 				</ul>
 			</div>
 		</div>
-
-		<a href="http://imgur.com/pjJY7dP"><img src="http://i.imgur.com/pjJY7dP.jpg" title="Hosted by imgur.com" /></a>
-
+		<div>
+		<a href="http://imgur.com/pjJY7dP"><img src="http://i.imgur.com/pjJY7dP.jpg" title="Hosted by imgur.com" align="middle"/></a>
+		</div>
 	</body>
 </html>
