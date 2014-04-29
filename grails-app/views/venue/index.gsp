@@ -24,9 +24,9 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="venueAddress" title="${message(code: 'venue.venueAddress.label', default: 'Venue Address')}" />
-					
 						<g:sortableColumn property="venueName" title="${message(code: 'venue.venueName.label', default: 'Venue Name')}" />
+					
+						<g:sortableColumn property="venueAddress" title="${message(code: 'venue.venueAddress.label', default: 'Venue Address')}" />
 					
 						<g:sortableColumn property="venuePostCode" title="${message(code: 'venue.venuePostCode.label', default: 'Venue Post Code')}" />
 					
@@ -40,9 +40,9 @@
 				<g:each in="${venueInstanceList}" status="i" var="venueInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${venueInstance.id}">${fieldValue(bean: venueInstance, field: "venueAddress")}</g:link></td>
+						<td><g:link action="show" id="${venueInstance.id}">${fieldValue(bean: venueInstance, field: "venueName")}</g:link></td>
 					
-						<td>${fieldValue(bean: venueInstance, field: "venueName")}</td>
+						<td>${fieldValue(bean: venueInstance, field: "venueAddress")}</td>
 					
 						<td>${fieldValue(bean: venueInstance, field: "venuePostCode")}</td>
 					

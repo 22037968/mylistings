@@ -23,13 +23,12 @@
 			</g:if>
 			<ol class="property-list venue">
 			
-				<g:if test="${venueInstance?.events}">
+			
+				<g:if test="${venueInstance?.venueName}">
 				<li class="fieldcontain">
-					<span id="events-label" class="property-label"><g:message code="venue.events.label" default="Events" /></span>
+					<span id="venueName-label" class="property-label"><g:message code="venue.venueName.label" default="Venue Name" /></span>
 					
-						<g:each in="${venueInstance.events}" var="e">
-						<span class="property-value" aria-labelledby="events-label"><g:link controller="event" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="venueName-label"><g:fieldValue bean="${venueInstance}" field="venueName"/></span>
 					
 				</li>
 				</g:if>
@@ -39,15 +38,6 @@
 					<span id="venueAddress-label" class="property-label"><g:message code="venue.venueAddress.label" default="Venue Address" /></span>
 					
 						<span class="property-value" aria-labelledby="venueAddress-label"><g:fieldValue bean="${venueInstance}" field="venueAddress"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${venueInstance?.venueName}">
-				<li class="fieldcontain">
-					<span id="venueName-label" class="property-label"><g:message code="venue.venueName.label" default="Venue Name" /></span>
-					
-						<span class="property-value" aria-labelledby="venueName-label"><g:fieldValue bean="${venueInstance}" field="venueName"/></span>
 					
 				</li>
 				</g:if>
@@ -75,6 +65,17 @@
 					<span id="venueWebsite-label" class="property-label"><g:message code="venue.venueWebsite.label" default="Venue Website" /></span>
 					
 						<span class="property-value" aria-labelledby="venueWebsite-label"><g:fieldValue bean="${venueInstance}" field="venueWebsite"/></span>
+					
+				</li>
+				</g:if>
+
+				<g:if test="${venueInstance?.events}">
+				<li class="fieldcontain">
+					<span id="events-label" class="property-label"><g:message code="venue.events.label" default="Events" /></span>
+					
+						<g:each in="${venueInstance.events}" var="e">
+						<span class="property-value" aria-labelledby="events-label"><g:link controller="event" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>
