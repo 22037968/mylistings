@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel='stylesheet' type='text/css' href='fullcalendar.css' />
+		<script type='text/javascript' src='jquery.js'></script>
+		<script type='text/javascript' src='fullcalendar.js'></script>
+
+		<script> $(document).ready(function() {
+
+		// page is now ready, initialize the calendar...
+
+		$('#calendar').fullCalendar({
+		// put your options and callbacks here
+		})
+
+		});
+		 </script> 
+
 		<meta name="layout" content="main"/>
 		<title>Welcome to "My Listings Application"</title>
 		<style type="text/css" media="screen">
@@ -79,6 +94,8 @@
 				}
 			}
 		</style>
+
+
 	</head>
 	<body>
 
@@ -102,5 +119,6 @@
 		<a href="http://imgur.com/pjJY7dP"><img src="http://i.imgur.com/pjJY7dP.jpg" title="Plan your events here!" align="middle"/></a>
 		<p> Application created by Andreas Andreou & Stephen Herbert 2014 &#174; </p>
 		</div>
+		<div id='calendar'></div>
 	</body>
 </html>

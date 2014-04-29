@@ -49,6 +49,8 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         runtime 'mysql:mysql-connector-java:5.1.24'
+	runtime 'jquery:1.4.2.2'
+	runtime 'jquery-ui:1.8.2.1'
     }
 
     plugins {
@@ -65,8 +67,8 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.3.8"
 
 
-        runtime ":jquery:1.4.2.2"
-	runtime ":jquery-ui:1.8.2.1"
+        //runtime ":jquery:1.4.2.2"
+	//runtime ":jquery-ui:1.8.2.1"
 
 
         runtime ":resources:1.2.1"
