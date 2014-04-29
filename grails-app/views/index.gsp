@@ -83,7 +83,7 @@
 	<body>
 
 		<div id="page-body" role="main">
-			<h1>My Listings Application</h1>
+			<h1>Out and about in your city</h1>
 			<p>Congratulations, you have made it to My Listings Application. You can find out and share events that are happening in your area!
 
 	Below is a list of options that are currently deployed in this application,
@@ -100,6 +100,7 @@
 		</div>
 		<div>
 		<a href="http://imgur.com/pjJY7dP"><img src="http://i.imgur.com/pjJY7dP.jpg" title="Plan your events here!" align="middle"/></a>
+		<p> Application created by Andreas Andreou & Stephen Herbert 2014 &#174; </p>
 		</div>
 	</body>
 </html>
