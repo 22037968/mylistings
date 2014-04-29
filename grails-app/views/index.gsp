@@ -99,7 +99,7 @@
 			</div>
 		</div>
 		<div>
-		<a href="http://imgur.com/pjJY7dP"><img src="http://i.imgur.com/pjJY7dP.jpg" title="Hosted by imgur.com" align="middle"/></a>
+		<a href="http://imgur.com/pjJY7dP"><img src="http://i.imgur.com/pjJY7dP.jpg" title="Plan your events here!" align="middle"/></a>
 		</div>
 	</body>
 </html>

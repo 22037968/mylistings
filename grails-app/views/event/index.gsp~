@@ -24,18 +24,17 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="eventName" title="${message(code: 'event.eventName.label', default: 'Event Name')}" />
+						<g:sortableColumn property="endTime" title="${message(code: 'event.endTime.label', default: 'End Time')}" />
 					
 						<g:sortableColumn property="eventDate" title="${message(code: 'event.eventDate.label', default: 'Event Date')}" />
 					
+						<g:sortableColumn property="eventName" title="${message(code: 'event.eventName.label', default: 'Event Name')}" />
 					
 						<g:sortableColumn property="price" title="${message(code: 'event.price.label', default: 'Price')}" />
 					
 						<th><g:message code="event.promoter.label" default="Promoter" /></th>
 					
 						<g:sortableColumn property="startTime" title="${message(code: 'event.startTime.label', default: 'Start Time')}" />
-
-						<g:sortableColumn property="endTime" title="${message(code: 'event.endTime.label', default: 'End Time')}" />
 					
 					</tr>
 				</thead>
